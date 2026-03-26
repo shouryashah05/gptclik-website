@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reach Out | GPT-CLIK</title>
+    <meta name="description" content="Inquiry form for GPT-CLIK extension support." />
+    <style>
+      :root {
+        --bg: #05070b;
+        --surface: #0b1220;
+        --line: rgba(96, 165, 250, 0.2);
+        --accent: #60a5fa;
+        --text-main: #e6edf7;
+        --text-muted: #94a3b8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+        color: var(--text-main);
+        background: radial-gradient(circle at 10% 10%, rgba(96, 165, 250, 0.1), transparent 36%),
+          radial-gradient(circle at 88% 30%, rgba(59, 130, 246, 0.08), transparent 40%), var(--bg);
+        line-height: 1.7;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(10px);
+        background: linear-gradient(to bottom, rgba(5, 7, 11, 0.92), rgba(5, 7, 11, 0.45));
+        border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+      }
+
+      .topnav {
+        width: min(980px, 92vw);
+        margin: 0 auto;
+        padding: 0.85rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .brand {
+        color: var(--text-main);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        color: #bfd9ff;
+        text-decoration: none;
+      }
+
+      .btn-nav {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 0.52rem 0.85rem;
+        background: #1f44ff;
+        border: 1px solid #1f44ff;
+        color: #e6edf7;
+        text-decoration: none;
+        font-size: 0.88rem;
+        font-weight: 700;
+      }
+
+      .wrap {
+        width: min(980px, 92vw);
+        margin: 0 auto;
+      }
+
+      .page-header {
+        padding: 2.2rem 0 1.2rem;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.9rem, 4.4vw, 2.8rem);
+        line-height: 1.15;
+      }
+
+      .sub {
+        margin-top: 0.6rem;
+        color: var(--text-muted);
+      }
+
+      main {
+        padding: 1.2rem 0 2.2rem;
+      }
+
+      .form-card {
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        border-radius: 14px;
+        background: linear-gradient(180deg, rgba(11, 18, 32, 0.82), rgba(15, 23, 42, 0.6));
+        padding: 1rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      label {
+        display: grid;
+        gap: 0.3rem;
+        font-size: 0.94rem;
+        color: var(--text-main);
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        border-radius: 10px;
+        background: rgba(7, 13, 24, 0.9);
+        color: var(--text-main);
+        padding: 0.68rem 0.78rem;
+        font: inherit;
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .actions {
+        display: flex;
+        gap: 0.7rem;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 0.65rem 1rem;
+        text-decoration: none;
+        border: 1px solid transparent;
+        font-weight: 700;
+      }
+
+      .btn-primary {
+        background: #1f44ff;
+        border-color: #1f44ff;
+        color: #e6edf7;
+      }
+
+      .btn-ghost {
+        background: rgba(11, 18, 32, 0.8);
+        border-color: rgba(96, 165, 250, 0.35);
+        color: #e6edf7;
+      }
+
+      .footer {
+        border-top: 1px solid rgba(148, 163, 184, 0.15);
+        padding: 1rem 0 2.1rem;
+        color: var(--text-muted);
+        font-size: 0.94rem;
+      }
+
+      .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-links {
+        display: inline-flex;
+        gap: 0.8rem;
+      }
+
+      .footer-links a {
+        color: #bfd9ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topnav">
+        <a class="brand" href="index.html">GPT-CLIK</a>
+        <div class="nav-links">
+          <a href="index.html#how-it-works">How It Works</a>
+          <a href="index.html#modes">Modes</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="inquiry.html">Reach Out</a>
+        </div>
+        <a class="btn-nav" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+      </nav>
+    </header>
+
+    <header class="page-header">
+      <div class="wrap">
+        <h1>Reach Out</h1>
+        <p class="sub">Send inquiries, support requests, or partnership messages for GPT-CLIK.</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="form-card">
+        <form class="grid" action="mailto:shouryshah29.pnq@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            Inquiry type
+            <select name="type">
+              <option>Support</option>
+              <option>Feedback</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" placeholder="How can we help?" required></textarea>
+          </label>
+
+          <div class="actions">
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            <a class="btn btn-ghost" href="index.html">Back to Home</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-row">
+          <p>© 2026 ClikGPT</p>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

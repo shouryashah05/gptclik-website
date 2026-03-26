@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | GPT-CLIK</title>
+    <meta
+      name="description"
+      content="Privacy Policy for GPT-CLIK Chrome extension."
+    />
+    <style>
+      :root {
+        --bg: #05070b;
+        --surface: #0b1220;
+        --surface-elev: #0f172a;
+        --line: rgba(96, 165, 250, 0.2);
+        --accent: #60a5fa;
+        --text-main: #e6edf7;
+        --text-muted: #94a3b8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+        color: var(--text-main);
+        background: radial-gradient(circle at 10% 10%, rgba(96, 165, 250, 0.1), transparent 36%),
+          radial-gradient(circle at 88% 30%, rgba(59, 130, 246, 0.08), transparent 40%), var(--bg);
+        line-height: 1.7;
+      }
+
+      .wrap {
+        width: min(980px, 92vw);
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(10px);
+        background: linear-gradient(to bottom, rgba(5, 7, 11, 0.92), rgba(5, 7, 11, 0.45));
+        border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+      }
+
+      .topnav {
+        width: min(980px, 92vw);
+        margin: 0 auto;
+        padding: 0.85rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .brand {
+        color: var(--text-main);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        color: #bfd9ff;
+        text-decoration: none;
+      }
+
+      .btn-nav {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 0.52rem 0.85rem;
+        background: #1f44ff;
+        border: 1px solid #1f44ff;
+        color: #e6edf7;
+        text-decoration: none;
+        font-size: 0.88rem;
+        font-weight: 700;
+      }
+
+      .page-header {
+        padding: 2.5rem 0 1.2rem;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+      }
+
+      .eyebrow {
+        margin: 0 0 0.65rem;
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.9rem, 4.4vw, 2.8rem);
+        line-height: 1.15;
+      }
+
+      .dates {
+        margin-top: 0.9rem;
+        color: var(--text-muted);
+      }
+
+      .toc {
+        margin: 1.6rem 0;
+        padding: 1rem 1.1rem;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(11, 18, 32, 0.72);
+      }
+
+      .toc h2 {
+        margin: 0 0 0.55rem;
+        font-size: 1rem;
+      }
+
+      .toc ul {
+        margin: 0;
+        padding-left: 1.1rem;
+      }
+
+      .toc a {
+        color: #bfd9ff;
+        text-decoration: none;
+      }
+
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 1.1rem 0 2.4rem;
+      }
+
+      section {
+        margin-bottom: 1.25rem;
+        padding: 1rem 1.05rem;
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        border-radius: 14px;
+        background: linear-gradient(180deg, rgba(11, 18, 32, 0.82), rgba(15, 23, 42, 0.6));
+      }
+
+      h2 {
+        margin: 0 0 0.55rem;
+        font-size: 1.15rem;
+      }
+
+      h3 {
+        margin: 0.8rem 0 0.35rem;
+        font-size: 1rem;
+      }
+
+      p {
+        margin: 0.35rem 0;
+      }
+
+      ul {
+        margin: 0.35rem 0 0.55rem;
+        padding-left: 1.15rem;
+      }
+
+      .note {
+        color: var(--text-muted);
+      }
+
+      .footer {
+        border-top: 1px solid rgba(148, 163, 184, 0.15);
+        padding: 1rem 0 2.1rem;
+        color: var(--text-muted);
+        font-size: 0.94rem;
+      }
+
+      .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-links {
+        display: inline-flex;
+        gap: 0.8rem;
+      }
+
+      .footer-links a {
+        color: #bfd9ff;
+      }
+
+      @media (max-width: 680px) {
+        .page-header {
+          padding-top: 1.6rem;
+        }
+
+        section {
+          padding: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topnav">
+        <a class="brand" href="index.html">GPT-CLIK</a>
+        <div class="nav-links">
+          <a href="index.html#how-it-works">How It Works</a>
+          <a href="index.html#modes">Modes</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="inquiry.html">Reach Out</a>
+        </div>
+        <a class="btn-nav" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+      </nav>
+    </header>
+
+    <header class="page-header">
+      <div class="wrap">
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Privacy Policy for GPT-CLIK</h1>
+        <p class="dates">Effective Date: [March 26, 2026]</p>
+        <p class="dates">Last Updated: [March 26, 2026]</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <nav class="toc" aria-label="Table of contents">
+        <h2>Table of Contents</h2>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#what-it-does">What GPT-CLIK Does</a></li>
+          <li><a href="#data-handle">Data We Handle</a></li>
+          <li><a href="#not-collect">What We Do Not Collect or Sell</a></li>
+          <li><a href="#how-used">How Data Is Used</a></li>
+          <li><a href="#third-parties">Third-Party Services</a></li>
+          <li><a href="#sharing">Data Sharing</a></li>
+          <li><a href="#retention">Data Retention</a></li>
+          <li><a href="#controls">User Control and Choices</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#children">Children's Privacy</a></li>
+          <li><a href="#changes">Policy Changes</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#limited-use">Chrome Web Store Limited Use Statement</a></li>
+        </ul>
+      </nav>
+
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          GPT-CLIK is a Chrome extension that helps users send user-selected text from webpages to a selected AI
+          chat service (ChatGPT, Claude, or Gemini) through a right-click menu or keyboard shortcut.
+        </p>
+        <p>
+          Core purpose: user can send selected text from webpages to ChatGPT, Claude, or Gemini via context menu or
+          keyboard shortcut.
+        </p>
+      </section>
+
+      <section id="what-it-does">
+        <h2>What GPT-CLIK Does</h2>
+        <p>GPT-CLIK provides a simple, user-initiated workflow:</p>
+        <ul>
+          <li>You select text on a webpage.</li>
+          <li>You trigger GPT-CLIK using the context menu or shortcut.</li>
+          <li>GPT-CLIK opens your selected AI service and inserts the selected text into the chat composer.</li>
+        </ul>
+        <p>GPT-CLIK has a single purpose: sending user-selected text to a chosen AI chat service.</p>
+      </section>
+
+      <section id="data-handle">
+        <h2>Data We Handle</h2>
+        <p>GPT-CLIK may handle the following data:</p>
+        <h3>A. User-selected website text</h3>
+        <ul>
+          <li>Processed only when you explicitly trigger GPT-CLIK.</li>
+          <li>Sent to the AI service you selected (ChatGPT, Claude, or Gemini) to provide the feature.</li>
+        </ul>
+        <h3>B. Extension preferences saved in Chrome storage</h3>
+        <ul>
+          <li>Selected AI provider</li>
+          <li>Interaction mode (for example, instant send or paste/edit)</li>
+          <li>Theme preference</li>
+          <li>Saved chat mode setting</li>
+          <li>Optional saved chat URL</li>
+        </ul>
+        <p>
+          User-selected text may be transmitted to the user-chosen AI service only when user triggers the feature.
+        </p>
+      </section>
+
+      <section id="not-collect">
+        <h2>What We Do Not Collect or Sell</h2>
+        <p>GPT-CLIK does not:</p>
+        <ul>
+          <li>Sell personal data</li>
+          <li>Use user data for advertising</li>
+          <li>Share user data with data brokers</li>
+          <li>Perform background surveillance or hidden tracking</li>
+          <li>Collect financial, payment, health, or authentication credentials as part of its core design</li>
+        </ul>
+        <p>
+          No sale of data. No advertising use. No data broker sharing. No background tracking.
+        </p>
+        <p>
+          No collection of health, financial, authentication, location, or web history data by default.
+        </p>
+      </section>
+
+      <section id="how-used">
+        <h2>How Data Is Used</h2>
+        <p>Data is used only to provide and improve the extension's user-facing functionality:</p>
+        <ul>
+          <li>Send selected text to your chosen AI service when you request it</li>
+          <li>Remember your extension settings and preferences</li>
+        </ul>
+      </section>
+
+      <section id="third-parties">
+        <h2>Third-Party Services</h2>
+        <p>
+          When you use GPT-CLIK, selected text may be sent to one of these services, depending on your choice:
+        </p>
+        <ul>
+          <li>ChatGPT (OpenAI)</li>
+          <li>Claude (Anthropic)</li>
+          <li>Gemini (Google)</li>
+        </ul>
+        <p>Once data is sent to a third-party service, that service's own terms and privacy policy apply.</p>
+        <p>
+          Third parties: OpenAI/ChatGPT, Anthropic/Claude, Google/Gemini when user chooses them.
+        </p>
+      </section>
+
+      <section id="sharing">
+        <h2>Data Sharing</h2>
+        <p>
+          We only transfer data when necessary to provide the extension's core function (for example, sending
+          selected text to the AI provider you selected).
+        </p>
+        <p>
+          We do not transfer user data for personalized ads, data resale, creditworthiness, or lending purposes.
+        </p>
+      </section>
+
+      <section id="retention">
+        <h2>Data Retention</h2>
+        <ul>
+          <li>
+            Preference data remains in Chrome storage until you change it, clear browser extension data, or uninstall
+            GPT-CLIK.
+          </li>
+          <li>GPT-CLIK does not maintain a separate external user database for extension settings.</li>
+        </ul>
+      </section>
+
+      <section id="controls">
+        <h2>User Control and Choices</h2>
+        <p>You control when text is sent:</p>
+        <ul>
+          <li>GPT-CLIK acts on explicit user action.</li>
+          <li>You can change or clear saved settings at any time.</li>
+          <li>You can uninstall the extension at any time.</li>
+        </ul>
+        <p>
+          User can edit/clear saved preferences. User can uninstall extension to remove extension data from Chrome
+          storage.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>Security</h2>
+        <p>GPT-CLIK is designed to use secure HTTPS connections to supported AI destinations.</p>
+        <p>
+          No method of transmission or storage is guaranteed 100% secure, but we aim to follow reasonable security
+          practices.
+        </p>
+        <p>Data transmission uses HTTPS endpoints.</p>
+      </section>
+
+      <section id="children">
+        <h2>Children's Privacy</h2>
+        <p>
+          GPT-CLIK is not directed to children under 13, and we do not knowingly design it for child-directed data
+          collection.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>Policy Changes</h2>
+        <p>We may update this Privacy Policy to reflect product or legal changes.</p>
+        <p>Any update will revise the "Last Updated" date on this page.</p>
+        <p>Policy may be updated; updated date will be changed.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>For questions or privacy requests, contact: [your-email@example.com]</p>
+      </section>
+
+      <section id="limited-use">
+        <h2>Chrome Web Store Limited Use Statement</h2>
+        <p>
+          The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy,
+          including the Limited Use requirements.
+        </p>
+      </section>
+
+      <section>
+        <h2>Practical Recommendation</h2>
+        <ul>
+          <li>Publish this at a stable URL like /privacy.</li>
+          <li>Add the same URL in Chrome Web Store Privacy Policy field.</li>
+          <li>Add a visible "Privacy Policy" link on your landing page footer.</li>
+          <li>Keep wording synchronized with your store Data usage form (especially "Website content" only).</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-row">
+          <p>© 2026 ClikGPT</p>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

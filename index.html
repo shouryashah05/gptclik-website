@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLIK-GPT | Right-Click AI Command Center</title>
+    <meta
+      name="description"
+      content="CLIK-GPT is a Chrome extension that turns selected text into instant AI actions. Select, right-click, and send to ChatGPT, Claude, or Gemini."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb bg-orb-top"></div>
+    <div class="bg-orb bg-orb-mid"></div>
+
+    <header class="site-header">
+      <nav class="navbar wrap">
+        <a class="brand" href="index.html" aria-label="CLIK-GPT Home">
+          <img class="brand-logo" src="Group 8999.png" alt="GPT-CLIK" />
+          GPT-CLIK
+        </a>
+        <div class="nav-links">
+          <a href="index.html#how-it-works">How It Works</a>
+          <a href="index.html#modes">Modes</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="inquiry.html">Reach Out</a>
+        </div>
+        <a class="btn btn-nav" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro-screen section-screen">
+        <div class="intro-content reveal">
+          <img class="intro-logo" src="Group 8999.png" alt="GPT-CLIK logo" />
+          <p class="title1">GPT-CLIK</p>
+          <p class="title2">EXTENSION</p>
+          
+          <p class="intro-tagline">
+            Your fastest path from highlighted text to intelligent action.
+          </p>
+          <a class="btn btn-primary btn-lg" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+        </div>
+      </section>
+
+      <section class="split-screen section-screen" aria-labelledby="hero-title">
+        <div class="split-grid wrap">
+          <div class="right-action-demo reveal">
+            <img src="Group 143.svg" alt="GPT-CLIK right-click action demo" onerror="this.src='Group 8999.png'" />
+            </div>
+
+        
+           
+            <div class="cta-row reveal stagger-3">
+              <a class="btn btn-primary" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+              <a class="btn btn-ghost" href="#workflow"> Know More</a>
+            </div>
+
+           
+          </div>
+      </section>
+
+      <section id="workflow" class="panel wrap">
+        <div class="panel-head reveal">
+          <h3>How it works in 3 steps</h3>
+        </div>
+        <div id="how-it-works" class="steps-grid">
+          <article class="tile reveal stagger-1">
+            <span class="step-index">01</span>
+            <h4>Select text</h4>
+            <p>Highlight content from any page, document, or thread.</p>
+          </article>
+          <article class="tile reveal stagger-2">
+            <span class="step-index">02</span>
+            <h4>Right click</h4>
+            <p>Open the CLIK-GPT context command layer instantly.</p>
+          </article>
+          <article class="tile reveal stagger-3">
+            <span class="step-index">03</span>
+            <h4>Send to AI</h4>
+            <p>Push directly to your selected assistant in your chosen mode.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel wrap reveal" id="pick-ai">
+        <div class="panel-head">
+          <h3>Pick your AI</h3>
+        </div>
+        <div class="ai-grid">
+          <article class="ai-card">
+            <div class="ai-logo-wrap">
+              <img src="chatgpt-logo.png" alt="ChatGPT logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="ai-logo-fallback" style="display: none;">C</span>
+            </div>
+            <h4>ChatGPT (OpenAI)</h4>
+            <p>Best for versatile brainstorming, quick drafting, and creative content generation.</p>
+          </article>
+
+          <article class="ai-card">
+            <div class="ai-logo-wrap">
+              <img src="claude-logo.png" alt="Claude logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="ai-logo-fallback" style="display: none;">A</span>
+            </div>
+            <h4>Claude (Anthropic)</h4>
+            <p>Best for long-form, high-quality, and coherent writing requiring nuanced reasoning and minimal editing.</p>
+          </article>
+
+          <article class="ai-card">
+            <div class="ai-logo-wrap">
+              <img src="gemini-logo.png" alt="Gemini logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="ai-logo-fallback" style="display: none;">G</span>
+            </div>
+            <h4>Gemini (Google)</h4>
+            <p>Best for research-heavy, data-driven content that needs real-time Google Search integration and citations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="modes" class="panel wrap">
+        <div class="panel-head reveal">
+          <h3>Modes that match your workflow</h3>
+        </div>
+        <div class="modes-grid">
+          <article class="tile feature reveal stagger-1">
+            <h4>Instant Ask</h4>
+            <p>Fire prompts in one click.</p>
+          </article>
+          <article class="tile feature reveal stagger-2">
+            <h4>Paste &amp; Edit</h4>
+            <p>Refine before you send.</p>
+          </article>
+          <article class="tile feature reveal stagger-3">
+            <h4>Show Menu</h4>
+            <p>Choose your flow per context.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel wrap highlights-grid">
+        <article class="tile reveal stagger-1">
+          <h4>Shortcut-ready</h4>
+          <p>Keyboard-first flow for speed users who never break momentum.</p>
+        </article>
+        <article class="tile reveal stagger-2">
+          <h4>Saved chat routing</h4>
+          <p>Optionally route actions into existing conversations where context already lives.</p>
+        </article>
+      </section>
+
+      
+      
+
+      <section id="reach-out" class="panel final-cta wrap reveal">
+        <h3>Move faster with CLIK-GPT</h3>
+        <p>Install once, and make every selected line instantly actionable.</p>
+        <div class="cta-row cta-row-center">
+          <a class="btn btn-primary" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+          <a class="btn btn-ghost" href="inquiry.html">Reach out to us</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner wrap">
+        <div class="footer-layout">
+          <div class="footer-left">
+            <h4>ClikGPT</h4>
+            <p>Right-click AI workflows for speed users.</p>
+            <div class="support-row">
+              <a
+                class="repo-star-btn"
+                href="https://github.com/shouryashah05/GPT-CLIK-EXTENSION"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open project on GitHub"
+              >
+                <svg class="repo-star-btn__icon" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" fill="currentColor"/>
+                </svg>
+                <span class="github">GitHub</span>
+              </a>
+              <div class="bmc-slot" aria-label="Buy me a coffee button">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="shouryashah" data-color="#FFDD00" data-emoji="" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-right-meta">
+            <p>© 2026 ClikGPT</p>
+            <div class="footer-legal-links">
+              <a href="privacy.html">Privacy Policy</a>
+              <a href="terms.html">Terms and conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
